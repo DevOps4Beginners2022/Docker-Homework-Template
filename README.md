@@ -8,4 +8,4 @@ Przygotuj obraz na bazie nginx:1.21.6. Zmodyfikuj odpowiednio plik `Dockerfile`.
 
 3. Rozszerz wyżej wymieniony plik konfiguracyjny `default.conf` tak, aby serwer http odpowiadał także na port 8001. Po wykonaniu zapytania na ten na port należy zwrócić string `DevOps 4 Beginners 2022` w base64. (1pkt)
 
-4. Pobierz listę wszystkich tagów nginxa (np używając `curl` lub `wget`) z `https://registry.hub.docker.com/v2/repositories/library/nginx/tags/` oraz umieść ją w pliku `/tmp/nginx_versions.txt` w kontenerze. W pliku powinny się znaleść tylko nazwy tagów, odseparowane przecinkami, np: `tag_1,tag2,tag3`. (1 pkt)
+4. Zainstaluj w kontenerze paczkę `htop`. (1 pkt)
