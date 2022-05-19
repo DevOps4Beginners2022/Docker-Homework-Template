@@ -8,9 +8,9 @@ Przygotuj obraz na bazie `nginx:1.21.6`. Zmodyfikuj odpowiednio plik `Dockerfile
 
 2. Przenieś pliki `default.conf` do katalogu `/etc/nginx/conf.d/` oraz `index.html` do katalogu `/usr/share/nginx/html`. Uzupełnij plik `Dockerfile` oraz konfigurację nginxa w pliku `default.conf`, tak aby po wykonaniu zapytania na port 8000 (port w kontenerze) serwer zwrócił zawartość pliku `index.html`. (1 pkt)
 
-3. Rozszerz wyżej wymieniony plik konfiguracyjny `default.conf` tak, aby serwer http odpowiadał także na port 8001. Po wykonaniu zapytania na ten na port należy zwrócić string `DevOps 4 Beginners 2022` w base64. (1 pkt)
+3. Rozszerz wyżej wymieniony plik konfiguracyjny `default.conf` tak, aby serwer http odpowiadał także na port 8001. Po wykonaniu zapytania na ten na port należy zwrócić string `DevOps 4 Beginners 2022` zakodowany algorytmem base64. (1 pkt)
 
-4. Zainstaluj w kontenerze paczkę `htop`. (1 pkt)
+4. Zainstaluj w kontenerze paczkę(aplikację) `htop`. (1 pkt) 
 
 
 ### Zadanie 2
@@ -25,4 +25,4 @@ Przygotuj obraz na bazie `python:3.9` z 2 zmiennymi przekazanymi w trakcie budow
 
 4. Uruchom kontener jako użytkownik `mobydick`. (1 pkt)
 
-5. Skopiuj pliki `main.py`, `requirements.txt` oraz `run.sh` do katalogu `PROJECT_DIR` w kontenerze. Zainstaluj w kontenerze potrzebne paczki aplikacji z pliku `requiremnts.txt` za pomocą komendy `pip install -r requirements.txt`. Uruchom serwer aplikacji skryptem `run.sh`. (2 pkt)
+5. Skopiuj pliki `main.py`, `requirements.txt` oraz `run.sh` do katalogu `PROJECT_DIR` w kontenerze. Zainstaluj w kontenerze potrzebne paczki aplikacji z pliku `requiremnts.txt` za pomocą komendy `pip install -r requirements.txt`. Zmodyfikuj obraz tak aby po uruchomieniu kontenera wystartował serwer aplikacji. Plik startujacy aplikacje to run.sh (2 pkt)
